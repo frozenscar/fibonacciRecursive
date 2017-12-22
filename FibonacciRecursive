@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+//fibonacci
+int i = 1;
+int fibonacci(int j)
+{
+    j = i + j;
+    i = j - i;
+   printf("%d \n",j);
+    if (j>200)
+    {
+        return j;
+    }
+    fibonacci(j);
+}
+
+int main()
+{
+ printf("%d",fibonacci(2));
+}
